@@ -25,6 +25,8 @@ This project allows users to book laundry services online and receive booking co
 📸 Screenshots
 
 ![Homepage](screenshots/homepage.png)
+
+
 ![Service-page](screenshots/services-section.png)
 
 
