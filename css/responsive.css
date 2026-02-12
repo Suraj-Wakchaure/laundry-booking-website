@@ -1,0 +1,142 @@
+
+/* for medium screens (max-width: 1024px) */
+
+@media (max-width: 1024px) {
+
+  header {
+    margin: 2% 4%;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 40px;
+  }
+
+  .right-div img {
+    width: 60%;
+  }
+
+  .left-div h1 {
+    width: 100%;
+    font-size: 240%;
+  }
+
+  .achievement-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .achievements {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .achieve-box {
+    width: auto;
+    margin: 0;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .input-fields input {
+    width: 100%;
+  }
+
+  .quality-desc-section {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .newsletter-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button,
+  .newsletter-form #newsletter-email {
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .logo-and-about {
+    width: 100%;
+  }
+}
+
+
+
+/* for mobile (max-width: 600px) */
+
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .user-name {
+    width: 100%;
+  }
+
+  .hero-section {
+    margin: 4%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .achievement-section {
+    padding: 6% 4%;
+  }
+
+  .services {
+    padding: 8% 4%;
+  }
+
+  .added-items-card table {
+    font-size: 80%;
+  }
+
+  .total-amt {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .added-items-card hr {
+    display: none;
+  }
+
+  .quality-desc-section {
+    padding: 8% 4%;
+  }
+
+  .newsletter-section {
+    padding: 8% 4%;
+  }
+
+  footer {
+    padding: 8% 4%;
+    flex-direction: column;
+  }
+}

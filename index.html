@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Service App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+
+    <!-- Header section- which includes: logo, navbar, username -->
+    <header>
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+
+      <!-- nav bar -->
+      <nav>
+        <ul><li><a class="links" href="#hero-section">Home</a><hr class="under-line" /></li>
+          <li><a class="links" href="#services-section">Services</a><hr class="under-line" /></li>
+          <li><a class="links" href="#about-section">About Us</a><hr class="under-line" /></li>
+          <li><a class="links" href="#contact-section">Contact</a><hr class="under-line" /></li></ul>
+      </nav>
+
+      <!-- username div -->
+      <div class="user-name"><span>username</span></div>
+    </header>
+
+
+    <!-- Main hero section start -->
+    <section id="hero-section" class="hero-section">
+      <!-- left side -->
+      <div class="left-div">
+        <h1>Revitalize Your Clothes with Expert <span>Laundry Services!</span></h1>
+        <p>From premium dry cleaning to swift wash and fold, we deliver care and
+          convenience. Schedule a pickup and rediscover the freshness of your
+          clothes today!</p>
+        <a href="#services-section"><button type="button" class="btn">Book a service today!</button></a>
+      </div>
+      <!-- right side -->
+      <div class="right-div">
+        <img src="img/hero-img.jpg" alt="Laundry Image" />
+      </div>
+    </section>
+
+    <!-- Achievements section to diplay achievements -->
+    <section class="achievement-section">
+      <div class="achieve-title"><h2>Our Achievements</h2></div>
+      <div class="achievements">
+        <div class="achieve-box">
+          <h3>15+</h3>
+          <p>Laundry Services</p>
+        </div>
+        <div class="achieve-box">
+          <h3>240+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="achieve-box">
+          <h3>2+ Yrs</h3>
+          <p>Experience</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- services section -->
+    <section class="services" id="services-section">
+      <!-- left side -->
+      <div class="services-left-div">
+        <h2>Our Services</h2>
+        <p class="services-para">
+          Click on the Add to Cart button to add the services to your Cart
+        </p><hr class="separator" />
+
+        <div id="services-list-js" class="services-list">
+          <div class="list-item">
+            <!-- items will be added using JavaScript -->
+            <button type="button" class="services-list-add-btn">Add Item <i class="fa-solid fa-circle-plus"></i></button>
+          </div>
+        </div><hr class="separator" />
+
+        <p class="services-para"><i class="fa-solid fa-circle-info"></i> Add the items to the cart and book now</p>
+      </div>
+
+      <!-- right side -->
+      <div class="services-right-div">
+        <!-- added items will display here -->
+        <div class="added-items-card">
+          <h3>Added Items</h3>
+          <table>
+            <thead>
+              <th>S.No</th>
+              <th class="long">Service Name</th>
+              <th>Price</th>
+            </thead>
+            <tbody id="cart-items-list-js"></tbody>
+          </table>
+          <div id="no-item-added-msg-js" class="no-item-added-msg">
+            <div class="no-item-icon">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <strong>No Items Added</strong>
+            <p>Add items to the cart from the services bar</p>
+          </div><hr />
+          <div class="total-amt">
+            <h4>Total Amount</h4>
+            <p id="total-amt-js">₹ 0</p>
+          </div>
+        </div>
+
+        <!-- Booking form -->
+        <div class="book-now-card">
+          <h4>Book Now</h4>
+          <div class="input-div">
+            <div class="input-fields">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" placeholder="Suraj Wakchaure" required>
+            </div>
+            <div class="input-fields">
+              <label for="email">Email ID</label>
+              <input type="email" id="email" placeholder="mail@gmail.com" required>
+            </div>
+            <div class="input-fields">
+              <label for="phone">Phone Number</label>
+              <input type="phone" id="phone" placeholder="6151613216" required>
+            </div>
+          </div>
+          <div class="book-now-btn-container">
+            <button type="button" id="book-now-btn-js" class="book-now-btn" onclick="mailMe()">Book now</button>
+          </div>
+          <p id="showMsg"></p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About section contains the quality features offered -->
+    <section id="about-section" class="quality-desc-section">
+      <div class="quality-card">
+        <i class="fa-brands fa-square-web-awesome-stroke"></i>
+        <h3>Premium Services</h3>
+        <p> Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Quick Support</h3>
+        <p> We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-regular fa-truck"></i>
+        <h3>Hassle Free Delivery</h3>
+        <p> Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-regular fa-handshake"></i>
+        <h3>Affordable Prices</h3>
+        <p> Experience exceptional care without breaking the bank - our affordable prices make laundry day stress free.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+      <h2>Subscribe to our newsletter.</h2>
+      <div class="newsletter-form">
+        <input type="text" form="name" placeholder="Full name">
+        <input id="newsletter-email" type="email" form="email" placeholder="Email">
+        <button type="button">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="logo-and-about">
+        <h2>logo</h2>
+        <div class="about-us">
+          <h4>About us</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="imp-links">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a class="links" href="#">About us</a></li>
+          <li><a class="links" href="#">Contact us</a></li>
+          <li><a href="#" class="links">Privacy Policy</a></li>
+          <li><a href="#" class="links">Terms of use</a></li>
+          <li><a href="#" class="links">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- contact section -->
+      <div class="contacts" id="contact-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a class="links" href="#">mail@gmail.com</a></li>
+          <li><a class="links" href="#">+91 9292367564</a></li>
+        </ul>
+      </div>
+
+      <div class="social-media">
+        <h3>Follow us</h3>
+        <div class="social-platforms">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- This is to use emailJS for sending emails to users -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- From documentation -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "fjOxrSCCYCFBvTueQ",
+        });
+      })();</script>
+
+    <!-- For adding icons -->
+    <script src="https://kit.fontawesome.com/eae0b37832.js" crossorigin="anonymous"></script>
+
+    <!-- links the external JavaScript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
